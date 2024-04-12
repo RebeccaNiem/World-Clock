@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.js"></script>
   </head>
   <body>
     <div class="container">
@@ -13,17 +15,17 @@
         <option value="">Select a city..</option>
         <option value="">Auckland</option>
         <option value="">Paris</option>
-        <option value="">Cologne</option>
+        <option value="">Stockholm</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="Auckland">
         <div>
           <h2>Auckland</h2>
           <div class="date">August 15th 2022</div>
         </div>
         <div class="time">1:48:15 <small> AM </small></div>
       </div>
-      <div class="city">
+      <div class="city" id="Paris">
         <div>
           <h2>Paris</h2>
           <div class="date">August 15th 2022</div>
@@ -31,9 +33,9 @@
         <div class="time">1:48:15 <small> AM </small></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="Stockholm">
         <div>
-          <h2>Cologne</h2>
+          <h2>Stockholm</h2>
           <div class="date">August 15th 2022</div>
         </div>
         <div class="time">1:48:15 <small> AM </small></div>
@@ -48,5 +50,6 @@
         open sourced on GitHub</a
       >
     </footer>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
