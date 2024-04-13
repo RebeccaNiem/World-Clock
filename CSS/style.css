@@ -24,11 +24,11 @@ select {
 
 .container {
   max-width: 600px;
-  margin: 60px auto 13px;
+  margin: 150px auto 17px;
   background: white;
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 100px;
+  border-radius: 80px;
 }
 
 .city {
