@@ -4,7 +4,7 @@ function updateTime() {
   let AucklandDateElement = AucklandElement.querySelector(".date");
   let AucklandTimeElement = AucklandElement.querySelector(".time");
 
-  let AucklandTime = moment().tz("NZ");
+  let AucklandTime = moment().tz("Pacific/Auckland");
 
   AucklandDateElement.innerHTML = AucklandTime.format("MMM Do YYYY");
   AucklandTimeElement.innerHTML = AucklandTime.format(
@@ -37,3 +37,24 @@ function updateTime() {
 }
 updateTime();
 setInterval(updateTime, 1000);
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = `
+ <div class="city">
+          <div>
+            <h2>${cityName}</h2>
+            <div class="date">${cityTime.format("MMMM Do YYY")}</div>
+          </div>
+          <div class="time">${cityTime.format(
+            "h:mm:ss"
+          )}<small>${cityTime.format("A")}</small></div>
+        </div>
+        `;
+}
+
+let citySelectElement = document.querySelector("#city");
+citySelectElement.addEventListener("change", updateCity);

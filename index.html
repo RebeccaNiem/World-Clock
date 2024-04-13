@@ -11,34 +11,40 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select>
+      <select id="city">
         <option value="">Select a city..</option>
-        <option value="">Auckland</option>
-        <option value="">Paris</option>
-        <option value="">Stockholm</option>
+        <option value="Pacific/Auckland">Auckland</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Europe/Stockholm">Stockholm</option>
+        <option value="Pacific/Honululu">Honululu</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Americae/New_York">New York</option>
       </select>
 
-      <div class="city" id="Auckland">
-        <div>
-          <h2>Auckland</h2>
-          <div class="date">August 15th 2022</div>
+      <div id="cities">
+        <div class="city" id="Auckland">
+          <div>
+            <h2>Auckland</h2>
+            <div class="date">August 15th 2022</div>
+          </div>
+          <div class="time">1:48:15 <small> AM </small></div>
         </div>
-        <div class="time">1:48:15 <small> AM </small></div>
-      </div>
-      <div class="city" id="Paris">
-        <div>
-          <h2>Paris</h2>
-          <div class="date">August 15th 2022</div>
-        </div>
-        <div class="time">1:48:15 <small> AM </small></div>
-      </div>
 
-      <div class="city" id="Stockholm">
-        <div>
-          <h2>Stockholm</h2>
-          <div class="date">August 15th 2022</div>
+        <div class="city" id="Paris">
+          <div>
+            <h2>Paris</h2>
+            <div class="date">August 15th 2022</div>
+          </div>
+          <div class="time">1:48:15 <small> AM </small></div>
         </div>
-        <div class="time">1:48:15 <small> AM </small></div>
+
+        <div class="city" id="Stockholm">
+          <div>
+            <h2>Stockholm</h2>
+            <div class="date">August 15th 2022</div>
+          </div>
+          <div class="time">1:48:15 <small> AM </small></div>
+        </div>
       </div>
     </div>
 
