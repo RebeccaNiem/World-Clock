@@ -24,15 +24,15 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  // Sweden
-  let PerthElement = document.querySelector("#Perth");
-  if (PerthElement) {
-    let PerthDateElement = PerthElement.querySelector(".date");
-    let PerthTimeElement = PerthElement.querySelector(".time");
-    let PerthTime = moment().tz("Australia/Perth");
+  // Maldives
+  let MaldivesElement = document.querySelector("#Maldives");
+  if (MaldivesElement) {
+    let MaldivesDateElement = MaldivesElement.querySelector(".date");
+    let MaldivesTimeElement = MaldivesElement.querySelector(".time");
+    let MaldivesTime = moment().tz("Indian/Maldives");
 
-    PerthDateElement.innerHTML = PerthTime.format("MMMM	Do YYYY");
-    PerthTimeElement.innerHTML = PerthTime.format(
+    MaldivesDateElement.innerHTML = MaldivesTime.format("MMMM	Do YYYY");
+    MaldivesTimeElement.innerHTML = MaldivesTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
