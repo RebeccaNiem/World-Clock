@@ -24,6 +24,30 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  // Sweden
+  let PerthElement = document.querySelector("#Perth");
+  if (PerthElement) {
+    let PerthDateElement = PerthElement.querySelector(".date");
+    let PerthTimeElement = PerthElement.querySelector(".time");
+    let PerthTime = moment().tz("Australia/Perth");
+
+    PerthDateElement.innerHTML = PerthTime.format("MMMM	Do YYYY");
+    PerthTimeElement.innerHTML = PerthTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+  //Shanghai
+  let ShanghaiElement = document.querySelector("#Shanghai");
+  if (ShanghaiElement) {
+    let ShanghaiDateElement = ShanghaiElement.querySelector(".date");
+    let ShanghaiTimeElement = ShanghaiElement.querySelector(".time");
+    let ShanghaiTime = moment().tz("Asia/Shanghai");
+
+    ShanghaiDateElement.innerHTML = ShanghaiTime.format("MMMM	Do YYYY");
+    ShanghaiTimeElement.innerHTML = ShanghaiTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
@@ -45,7 +69,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
-  <a href="index.html"> All cities</a>
+  <a href="index.html"> Other cities🌎</a>
   `;
 }
 
